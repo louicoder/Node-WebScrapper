@@ -1,5 +1,9 @@
 // This file contains a few instructions that we will follow throughout the course of the project. Most of these instrctions are the industry best practises that we also want to follow. Lets work the professional way.
 
+//  !!!!! IMPORTANT NOTICE !!!!!
+// 1. Pull requests will only be to develop branch and NOT master branch. 
+// 2. Rebase your branch off develop before raising your Pull requests to avoid merge conflicts.
+
 /**
  * ===== PROJECT MANAGEMENT =====
  * when you are going to start a task check that the task is assigned to you.
