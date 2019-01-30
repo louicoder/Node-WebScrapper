@@ -6,6 +6,9 @@ The scrapper will be used to collect analytics data from a web source like a web
 
 We look forward to using this idea to be able to gather online analytics not only from facebook but also from other websites.
 
+## Instructions
+Instructions about the project can be found in the `instructions.js` file.
+
 | Author        | Github handle |
 | ------------- |:-------------:| 
 | Louis Musanje Michael     | [louicoder](github.com/louicoder)|

@@ -2,7 +2,7 @@
 
 //  !!!!! IMPORTANT NOTICE !!!!!
 // 1. Pull requests will only be to develop branch and NOT master branch. 
-// 2. Reabse your branch off develo before raiding your Pull requests to avoid merge conflicts.
+// 2. Rebase your branch off develop before raising your Pull requests to avoid merge conflicts.
 
 /**
  * ===== PROJECT MANAGEMENT =====

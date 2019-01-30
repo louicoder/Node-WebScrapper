@@ -11,10 +11,7 @@
     "url": "https://github.com/louiCoder/Node-Facebook-WebScrapper.git"
   },
   "dependencies": {
-    "request": "*",
-    "cheerio": "*",
-    "apify": "*",
-    "puppeteer": "*"
+    "cheerio": "1.0.0-rc.2"
   },
   "keywords": [],
   "author": "",
