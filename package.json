@@ -31,6 +31,6 @@
   },
   "nodemonConfig": {
     "ignore": "",
-    "delay": "2500"
+    "delay": "5000"
   }
 }

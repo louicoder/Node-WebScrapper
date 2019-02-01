@@ -15,8 +15,13 @@ const request = require('request');
 // function that handles making requests and returing HTML as a response to be used by other functions.
 function scrapUrl (url) {
     request(url, (error, response, body) => {
-        // const res = cheerio.load(response);
-        console.log(response)
+        // check if there's an error before proceeding
+        if (error) {
+            console.log("Something went wrong, Error -> " + error)
+            return;
+        }
+        // log the results from the response
+        console.log(response.body);
     })
 }
 
