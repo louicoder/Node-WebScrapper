@@ -12,8 +12,8 @@ function sendMessage (numbers) {
         // send message
         client.messages
             .create({
-                // body should be the message you are sending
-                body: `Hello there`,
+                // body should be the message you are sending. you can insert anything you feel like
+                body: `Hello, insert your message here...`,
                 // for now we are using the twilio sandbox untill production then it can be changed
                 from: `whatsapp:+14155238886`,
                 // THIS NUMBER IS KEPT AS AN ENVIRONMENTAL VARIABLE IN THE nodemon.json file, key is number
@@ -21,7 +21,7 @@ function sendMessage (numbers) {
             })
             // resolve
             .then(message => {
-                //   message was sent successsfully
+                // message was sent successsfully
                 console.log(message._solution)
             })
             .catch(error => {
