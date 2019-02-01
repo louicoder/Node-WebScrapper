@@ -4,17 +4,19 @@
   "description": "A web scrapper built on NodeJS for data analytics.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/louiCoder/Node-Facebook-WebScrapper.git"
   },
   "dependencies": {
-    "request": "*",
-    "cheerio": "*",
-    "apify": "*",
-    "puppeteer": "*"
+    "cheerio": "1.0.0-rc.2",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "nodemailer": "^5.1.1",
+    "request": "^2.88.0"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +24,13 @@
   "bugs": {
     "url": "https://github.com/louiCoder/Node-Facebook-WebScrapper/issues"
   },
-  "homepage": "https://github.com/louiCoder/Node-Facebook-WebScrapper#readme"
+  "homepage": "https://github.com/louiCoder/Node-Facebook-WebScrapper#readme",
+  "devDependencies": {
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9"
+  },
+  "nodemonConfig": {
+    "ignore": "",
+    "delay": "5000"
+  }
 }
