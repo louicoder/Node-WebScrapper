@@ -6,8 +6,8 @@ app = express();
 
 // lets schedule task to be run on the server
 
-cron.schedule("* * * * *", function () {
-    console.log("running a task every minute");
+cron.schedule("20 * * * *", function () {
+    console.log("running a task every 20 seconds");
 });
 
 app.listen(3128);
