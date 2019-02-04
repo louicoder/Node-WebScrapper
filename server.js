@@ -33,7 +33,7 @@ app.listen(port, () => {
     // scrapUrl is a method I have defined requests.js file and exported it here.
     // Once the server starts, its, called immediately.
     // The host below hosts movies
-    // scrapUrl('http://dl8.heyserver.in/film/'); // comment if you don't need to use the scrapper.
+    scrapUrl('http://dl8.heyserver.in/film/'); // comment if you don't need to use the scrapper.
 
     // run cronjobs from here
     // cronJob(); // comment if you don't need to use the cronJob.
