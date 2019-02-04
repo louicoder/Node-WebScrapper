@@ -67,8 +67,8 @@
      * ===== ATTACH YOUR ISSUES TO PULL REQUEST =========
      * You can simple attach your PR to an existing issue on the remote repo by;
      * 
-     * 1. attach the issue id in the commit message e.g git commit -m "add new example.js file #89" 
-     * where #89 is the issue id of the issue you are working on
+     * 1. adding a keyword "connects" leave a space and add #id_of_issue/issue-number in your PR desciption
+     * and the issue will be moved automatically.
      * 
      */
 
