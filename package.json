@@ -16,7 +16,8 @@
     "express": "^4.16.4",
     "fs": "0.0.1-security",
     "nodemailer": "^5.1.1",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "twilio": "^3.27.1"
   },
   "keywords": [],
   "author": "",

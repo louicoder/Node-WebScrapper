@@ -71,3 +71,10 @@
      * where #89 is the issue id of the issue you are working on
      * 
      */
+
+     /**
+      * ======  ENVIRONMENTAL VARIABLES ==========
+      * 1. all environmental variables should be kept in the nodemon.js file
+      * 2. all sensitive variables/keys should removed from the file once your done.
+      * 3. variable key should be all capital letters. 
+      */
