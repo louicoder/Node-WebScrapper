@@ -4,7 +4,9 @@
         "PORT": 3000,
         "USERNAME": "",
         "PASSWORD": "",
-        "SID": "",
-        "TOKEN": ""
+        "TWILIO_SID": "AC0b6731e6dc6ea3ce2326bf8a36546a7f",
+        "TWILIO_TOKEN": "dfdaf56dc7363481ff85488860e80c80",
+        "SENDER_EMAIL": "musanje2010@gmail.com",
+        "SENDER_PASSWORD": "personGmail45"
     }
 }

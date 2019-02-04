@@ -1,10 +1,18 @@
 const express = require('express')
 const app = express()
+// commandline import
 const readline = require('readline').createInterface({ input: process.stdin, output: process.stdout })
+// cronjob imports
 const cronJob = require('./App/CronJobs/cronJob');
-// 
+// morgan for logging incoming server requests.
 const morgan = require('morgan');
+// webscrapper imports
 const scrapUrl = require('./App/Scraping/scrapper')
+// sending email imports
+const sendEmail = require('./App/Mailing/mail');
+
+// whatsapp messenger
+const {telNumbers, sendMessage} = require('./App/Whatsapp/whatsapp.js');
 
 // port can be set with environmental variable or hardcoded here.
 // however it's better set as an environmental variable.
@@ -16,7 +24,7 @@ const port = process.env.PORT
 // we are using morgan in order to log our requets in the console. 
 // it's a development package and should be pushed to production. 
 // That's why I have added it in package.json as a devDependency.
-app.use(morgan('dev'))
+app.use(morgan('dev'));
 
 // START THE SERVER HERE.....
 app.listen(port, () => {
@@ -25,10 +33,17 @@ app.listen(port, () => {
     // scrapUrl is a method I have defined requests.js file and exported it here.
     // Once the server starts, its, called immediately.
     // The host below hosts movies
-    scrapUrl('http://dl8.heyserver.in/film/'); // comment if you don't need to use the scrapper.
+    // scrapUrl('http://dl8.heyserver.in/film/'); // comment if you don't need to use the scrapper.
 
+    // run cronjobs from here
+    // cronJob(); // comment if you don't need to use the cronJob.
 
-    cronJob(); // comment if you don't need to use the cronJob.
+    // sending emails
+    // sendEmail(); uncomment we you need to use it.
+
+    // send whatsapp message from here.
+    // sendMessage(["+256704506345", "+2349052630413"]); // uncomment when needed for use.
+
 
     // !!!! ALERT PLEASE READ. !!!
     // THE LINES BELOW ARE RESPONSIBLE FOR PICKING OUTPUT FROM THE STANDARD I/O (TERMINAL/CONSOLE).
