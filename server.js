@@ -1,10 +1,10 @@
 const express = require('express')
 const app = express()
 const readline = require('readline').createInterface({ input: process.stdin, output: process.stdout })
-
+const cronJob = require('./App/CronJobs/cronJob');
 // 
 const morgan = require('morgan');
-const scrapUrl = require('./requests')
+const scrapUrl = require('./App/Scraping/scrapper')
 
 // port can be set with environmental variable or hardcoded here.
 // however it's better set as an environmental variable.
@@ -25,7 +25,10 @@ app.listen(port, () => {
     // scrapUrl is a method I have defined requests.js file and exported it here.
     // Once the server starts, its, called immediately.
     // The host below hosts movies
-    scrapUrl('http://dl8.heyserver.in/film/');
+    scrapUrl('http://dl8.heyserver.in/film/'); // comment if you don't need to use the scrapper.
+
+
+    cronJob(); // comment if you don't need to use the cronJob.
 
     // !!!! ALERT PLEASE READ. !!!
     // THE LINES BELOW ARE RESPONSIBLE FOR PICKING OUTPUT FROM THE STANDARD I/O (TERMINAL/CONSOLE).
