@@ -25,7 +25,7 @@ const cronJob = () => cron.schedule("*/10 * * * * *", function () {
 // For more illustrations on usage of the library ==> https://www.npmjs.com/package/node-cron
 
 // we do not need another instance of the app here.
-// we already have an instance in the server.j file and we should use only that
+// we already have an instance in the server.js file and we should use only that
 // to avoid multiple entry points of the application.
 // app.listen(3128); 
 
