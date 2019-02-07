@@ -120,11 +120,11 @@ Instructions about the project can be found in the `instructions.js` file. Here 
 #### Collaborators/Contributors:
 ---
 
-| Author        | Github handle |
+| Author        | Github handle | Twitter handle |
 | ------------- |:-------------:| 
 | Louis Musanje Michael     | [louicoder](https://github.com/louicoder)|
 
 
-| Collaborators      | Github handle      |
+| Collaborators      | Github handle      | Twitter handle | 
 | ------------- |:-------------:|
-| Kenneth Okenwa | [Anekenonso](https://github.com/Anekenonso)|
+| Kenneth Okenwa | [Anekenonso](github.com/Anekenonso)| [Anekenonso1](twitter.com/Anekenonso1)
