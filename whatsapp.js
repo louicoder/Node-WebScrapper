@@ -4,7 +4,7 @@ const client = require('twilio')(accountSid, authToken);
 const telNumbers = ["+256704506345", "+2349052630413"] // these two numbers belong to the collaborators louis and kenneth
 
 // function that handles sending of the whatsapp messages
-function sendMessage (numbers) {
+function sendMessage(numbers) {
 
     // to handle multiple numbers we need to create this loop below
     // sending a message to each number.
