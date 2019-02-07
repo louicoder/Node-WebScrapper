@@ -11,9 +11,9 @@ Instructions about the project can be found in the `instructions.js` file.
 
 | Author        | Github handle |
 | ------------- |:-------------:| 
-| Louis Musanje Michael     | [louicoder](github.com/louicoder)|
+| Louis Musanje Michael     | [louicoder](https://github.com/louicoder)|
 
 
 | Collaborators      | Github handle      |
 | ------------- |:-------------:|
-| Kenneth Okenwa | [Anekenonso](github.com/Anekenonso)|
+| Kenneth Okenwa | [Anekenonso](https://github.com/Anekenonso)|

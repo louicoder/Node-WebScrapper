@@ -4,7 +4,9 @@
         "PORT": 3000,
         "USERNAME": "",
         "PASSWORD": "",
-        "SID": "",
-        "TOKEN": ""
+        "TWILIO_SID": "",
+        "TWILIO_TOKEN": "",
+        "SENDER_EMAIL": "",
+        "SENDER_PASSWORD": ""
     }
 }
