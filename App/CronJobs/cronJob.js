@@ -2,7 +2,7 @@ const cron = require("node-cron");
 // const express = require("express"); // import is not necessary since we will not run the job in this file.
 // const fs = require("fs"); // we shall you this file-system module at a later stage when needed.
 
-const {sendMessage, telNumbers} = require('../Whatsapp/whatsapp');
+const telNumbers = require('../Whatsapp/numbers');
 
 // app = express(); we will not need this instance, it's already in server.js
 
