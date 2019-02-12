@@ -10,9 +10,11 @@ const morgan = require('morgan');
 const scrapUrl = require('./App/Scraping/scrapper')
 // sending email imports
 const sendEmail = require('./App/Mailing/mail');
+// collaborator's numbers
+const collaboratorsNumbers = require('./App/Whatsapp/numbers');
 
 // whatsapp messenger
-const {telNumbers, sendMessage} = require('./App/Whatsapp/whatsapp.js');
+const sendMessage = require('./App/Whatsapp/whatsapp.js');
 
 // port can be set with environmental variable or hardcoded here.
 // however it's better set as an environmental variable.
@@ -33,16 +35,20 @@ app.listen(port, () => {
     // scrapUrl is a method I have defined requests.js file and exported it here.
     // Once the server starts, its, called immediately.
     // The host below hosts movies
-    scrapUrl('http://dl8.heyserver.in/film/'); // comment if you don't need to use the scrapper.
+    // ============================
+    // scrapUrl('http://dl8.heyserver.in/film/'); // comment if you don't need to use the scrapper.
 
     // run cronjobs from here
+    // ======================
     // cronJob(); // comment if you don't need to use the cronJob.
 
     // sending emails
+    // ==============
     // sendEmail(); uncomment we you need to use it.
 
     // send whatsapp message from here.
-    // sendMessage(["+256704506345", "+2349052630413"]); // uncomment when needed for use.
+    // ================================
+    sendMessage(collaboratorsNumbers) // uncomment when needed for use.
 
 
     // !!!! ALERT PLEASE READ. !!!
