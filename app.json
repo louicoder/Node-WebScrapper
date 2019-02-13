@@ -1,0 +1,34 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "description": "Set up heroku app.json config file",
+  "env": {
+    "PORT": {
+      "required": true
+    },
+    "SENDER_EMAIL": {
+      "required": true
+    },
+    "SENDER_PASSWORD": {
+      "required": true
+    },
+    "TWILIO_SID": {
+      "required": true
+    },
+    "TWILIO_TOKEN": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "name": "Node-WebScrapper",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
