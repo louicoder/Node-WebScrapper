@@ -78,8 +78,7 @@ function sendMessage (whatsappNumbers) {
 ```
 
 #### Emails:
-Emails are away for redundancy of our communication tools. When errors happen in the process we use this feature to communicate to all listed emails about the error that happened in the application stating what went wrong. 
-To be able to receive emails add your email to the email constant in the `./App/Mailing/mail.js` file.
+Emails are a way of creating redundancy for communication in our application. When errors happen in any of our application processes, we use this feature to communicate to all listed emails about the error that happened and stating what went wrong in the message body. To be able to receive emails or to test out this feature add your email to the email constant in the `./App/Mailing/mail.js` file.
 
 ```
 // Each object in the array represents a user that wil receive the email. 
