@@ -2,11 +2,15 @@ const cron = require("node-cron");
 // const express = require("express"); // import is not necessary since we will not run the job in this file.
 // const fs = require("fs"); // we shall you this file-system module at a later stage when needed.
 
+const telNumbers = require('../Whatsapp/numbers');
+
 // app = express(); we will not need this instance, it's already in server.js
 
 // lets schedule the task through this function that can be exported to other modules/files.
+// default timing is 10 seconds
 const cronJob = () => cron.schedule("*/10 * * * * *", function () {
-    console.log("running a task every 10 seconds");
+    // console.log("running a task every 10 seconds");
+    sendMessage(telNumbers); // uncomment to send automated whtsapp messages here.
 });
 
 // DECSRIPTION OF THE CRON TIMING ARGUMENTS.

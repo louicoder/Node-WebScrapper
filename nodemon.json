@@ -2,11 +2,10 @@
 {
     "env": {
         "PORT": 3000,
-        "USERNAME": "",
-        "PASSWORD": "",
         "TWILIO_SID": "",
         "TWILIO_TOKEN": "",
         "SENDER_EMAIL": "",
-        "SENDER_PASSWORD": ""
+        "SENDER_PASSWORD": "",
+        "SANDBOX_WHATSAPP_NUMBER":"+14155238886"
     }
 }
