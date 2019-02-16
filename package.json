@@ -15,10 +15,11 @@
     "cheerio": "1.0.0-rc.2",
     "express": "^4.16.4",
     "fs": "0.0.1-security",
+    "node-cron": "^2.0.3",
     "nodemailer": "^5.1.1",
+    "nodemon": "^1.18.9",
     "request": "^2.88.0",
-    "twilio": "^3.27.1",
-    "nodemon": "^1.18.9"
+    "twilio": "^3.27.1"
   },
   "keywords": [],
   "author": "",
