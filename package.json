@@ -17,7 +17,8 @@
     "fs": "0.0.1-security",
     "nodemailer": "^5.1.1",
     "request": "^2.88.0",
-    "twilio": "^3.27.1"
+    "twilio": "^3.27.1",
+    "nodemon": "^1.18.9"
   },
   "keywords": [],
   "author": "",
@@ -27,8 +28,7 @@
   },
   "homepage": "https://github.com/louiCoder/Node-Facebook-WebScrapper#readme",
   "devDependencies": {
-    "morgan": "^1.9.1",
-    "nodemon": "^1.18.9"
+    "morgan": "^1.9.1"
   },
   "nodemonConfig": {
     "ignore": "",
