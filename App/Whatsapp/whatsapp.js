@@ -5,7 +5,7 @@ const client = require('twilio')(accountSid, authToken);
 const whatsappNumbers = require('./numbers')
 
 // function that handles sending of the whatsapp messages
-function sendMessage (whatsappNumbers) {
+function sendWhatsappMessage (whatsappNumbers) {
 
     // to handle multiple numbers we need to create this loop below
     // sending a message to each number.
@@ -14,7 +14,7 @@ function sendMessage (whatsappNumbers) {
         client.messages
             .create({
                 // body should be the message you are sending. you can insert anything you feel like
-                body: `Hello, this is an automated whatsapp message from Node webscrapper project`,
+                body: `Hello, this is an automated whatsapp message from Node webscrapper project. This message proves that the app is working fine`,
                 // for now we are using the twilio sandbox untill production then it can be changed
                 from: `whatsapp:${process.env.SANDBOX_WHATSAPP_NUMBER}`,
                 // THIS NUMBER IS KEPT AS AN ENVIRONMENTAL VARIABLE IN THE nodemon.json file, key is number
@@ -34,5 +34,5 @@ function sendMessage (whatsappNumbers) {
 }
 
 // let's export the function here.
-module.exports = sendMessage;
+module.exports = sendWhatsappMessage;
 

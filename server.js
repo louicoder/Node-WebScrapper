@@ -40,7 +40,7 @@ app.listen(port, () => {
 
     // run cronjobs from here
     // ======================
-    // cronJob(); // comment if you don't need to use the cronJob.
+     cronJob(); // comment if you don't need to use the cronJob.
 
     // sending emails
     // ==============
@@ -48,7 +48,7 @@ app.listen(port, () => {
 
     // send whatsapp message from here.
     // ================================
-    sendMessage(collaboratorsNumbers) // uncomment when needed for use.
+    // sendMessage(collaboratorsNumbers) // uncomment when needed for use.
 
 
     // !!!! ALERT PLEASE READ. !!!
