@@ -7,8 +7,8 @@ const telNumbers = require('../Whatsapp/numbers');
 // app = express(); we will not need this instance, it's already in server.js
 
 // lets schedule the task through this function that can be exported to other modules/files.
-// default timing is every 6 hours in  a day.
-const cronJob = () => cron.schedule(`* * */2 * * *`, function () {
+// default timing is every 2 hours in  a day.
+const cronJob = () => cron.schedule(`* */2 * * *`, function () {
     // console.log("running a task every 10 seconds");
     sendWhatsappMessage(telNumbers); // uncomment to send automated whtsapp messages here.
 });
