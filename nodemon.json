@@ -2,8 +2,8 @@
 {
     "env": {
         "PORT": 3000,
-        "TWILIO_SID": "AC0b6731e6dc6ea3ce2326bf8a36546a7f",
-        "TWILIO_TOKEN": "dfdaf56dc7363481ff85488860e80c80",
+        "TWILIO_SID": "",
+        "TWILIO_TOKEN": "",
         "SENDER_EMAIL": "",
         "SENDER_PASSWORD": "",
         "SANDBOX_WHATSAPP_NUMBER":"+14155238886",
