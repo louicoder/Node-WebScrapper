@@ -5,7 +5,7 @@ const readline = require('readline').createInterface({ input: process.stdin, out
 // cronjob imports
 const cronJob = require('./App/CronJobs/cronJob');
 // morgan for logging incoming server requests.
-const morgan = require('morgan');
+// const morgan = require('morgan');
 // webscrapper imports
 const scrapUrl = require('./App/Scraping/scrapper')
 // sending email imports
@@ -26,7 +26,7 @@ const port = process.env.PORT
 // we are using morgan in order to log our requets in the console. 
 // it's a development package and should be pushed to production. 
 // That's why I have added it in package.json as a devDependency.
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 
 // START THE SERVER HERE.....
 app.listen(port, () => {
