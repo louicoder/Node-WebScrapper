@@ -1,4 +1,4 @@
-function writeToTextFile() {
+function* writeToTextFile() {
     fs.writeFile('Output.txt', data, (err) => {
 
         // In case of a error throw err. 
@@ -6,6 +6,8 @@ function writeToTextFile() {
     })
 }
 
-function readFrom() {
+function readFromTextFile() {
 
 }
+
+module.exports = { writeToTextFile, readFromTextFile }
