@@ -34,6 +34,6 @@ function sendMessage(numbers) {
         })
     }
 
-    // let's export the function here.
+// let's export the function here.
 module.exports = sendWhatsappMessage;
 
