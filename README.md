@@ -10,6 +10,9 @@ We look forward to using this idea to be able to gather online analytics from di
 ---
 run `npm install` or simply `npm i` to install dependencies for the application.
 
+| Author        | Github handle | Twitter handle |
+| ------------- |:-------------:| 
+| Louis Musanje Michael     | [louicoder](github.com/louicoder)|
 #### CronJobs:
 ---
 We automate a few tasks like sending emails, SMSs and whatsapp messages using this particualr feature. To start using the cron-job function, simply import the function you want to be executed into the croJob.js file and execute within the cronJob function
@@ -20,6 +23,8 @@ const cronJob = () => cron.schedule("*/10 * * * * *", function () {
     sendMessage(telNumbers); // uncomment to send automated whtsapp messages here.
 });
 
+| Collaborators      | Github handle      | Twitter handle | 
+| ------------- |:-------------:|
 Example:
 ========
 0 8 * * * every day at 8am
