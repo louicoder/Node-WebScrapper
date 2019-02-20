@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 function* writeToTextFile() {
     fs.writeFile('Output.txt', data, (err) => {
 
