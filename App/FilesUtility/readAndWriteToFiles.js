@@ -9,7 +9,7 @@ function* writeToTextFile() {
 }
 
 function readFromTextFile() {
-
+    
 }
 
 module.exports = { writeToTextFile, readFromTextFile }
