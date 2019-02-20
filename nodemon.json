@@ -7,6 +7,6 @@
         "SENDER_EMAIL": "",
         "SENDER_PASSWORD": "",
         "SANDBOX_WHATSAPP_NUMBER":"+14155238886",
-        "CRON_TIME":"*/6 * * * *"
+        "CRON_TIME":"*/1 * * * *"
     }
 }
