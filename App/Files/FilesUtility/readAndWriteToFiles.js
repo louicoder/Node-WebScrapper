@@ -15,7 +15,7 @@ function* writeToTextFile() {
         }
         else {
             // if no error
-            console.log("file written successfully");
+           return "file written successfully"
         }
 
     })
