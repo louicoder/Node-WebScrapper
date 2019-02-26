@@ -32,5 +32,5 @@ function readFromTextFile() {
 
 }
 
-writeToTextFile(content, path);
+//writeToTextFile(content, path);
 module.exports = { writeToTextFile, readFromTextFile }
