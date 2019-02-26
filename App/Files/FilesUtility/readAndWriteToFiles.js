@@ -10,7 +10,7 @@ function* writeToTextFile() {
         // if an error occurs 
         if (err) {
 
-            console.log(err);
+            return err;
 
         }
         else {
